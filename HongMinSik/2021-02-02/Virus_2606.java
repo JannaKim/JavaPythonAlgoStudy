@@ -1,4 +1,3 @@
-package baekjoon_Search;
 import java.util.*;
 //https://fbtmdwhd33.tistory.com/28
 

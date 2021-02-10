@@ -1,4 +1,3 @@
-package baekjoon_Recursion;
 import java.util.Scanner;
 // https://shoark7.github.io/programming/algorithm/tower-of-hanoi
 // 하노이탑 이동 횟수는 항상 2^(k-1)이다. (여기서 k는 층 수)

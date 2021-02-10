@@ -1,4 +1,3 @@
-package baekjoon_Search;
 import java.util.Scanner;
 
 public class NumsCard_10816 {
