@@ -11,6 +11,5 @@ def backtrack(i,sm):
     backtrack(i+1, sm+L[i])
     backtrack(i+1, sm)
     
-
 backtrack(0, 0)
 print(cnt)
