@@ -4,7 +4,12 @@ import java.util.Scanner;
 public class Mensuration_14608 {
 
 	public static void main(String[] args) {
-		System.out.println("이클립스 연동 됐냐??!?!?!?!?!?!?!?");
+		Scanner sc = new Scanner(System.in);
+		int K = sc.nextInt();
+		int c1 = sc.nextInt(); int c2 = sc.nextInt();
+		int a = sc.nextInt(); int b = sc.nextInt(); int n = sc.nextInt();
+		
+		
 	}
 
 }
