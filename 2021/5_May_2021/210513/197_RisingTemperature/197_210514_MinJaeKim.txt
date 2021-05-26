@@ -1,0 +1,7 @@
+select distinct b.id 
+from weather a, weather b 
+where b.recorddate=ADDDATE(a.recorddate,1) and b.temperature > a.temperature;
+
+adddate 로 날짜 하루 올려준다
+from 으로 a, b 할 수 있다
+날짜 하루차이에 온도 b>a인것
