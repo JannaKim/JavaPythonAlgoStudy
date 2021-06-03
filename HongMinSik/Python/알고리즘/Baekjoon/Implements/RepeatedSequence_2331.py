@@ -1,4 +1,4 @@
-A, P = input().split() #문자열로 받아서 슬라이싱하자
+A, P = input().split()
 
 nums = []
 P = int(P)
