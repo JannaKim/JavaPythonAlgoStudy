@@ -22,3 +22,4 @@ for cnt in range(index):
 
 print(nums)
 print(cnt)
+# solved it
