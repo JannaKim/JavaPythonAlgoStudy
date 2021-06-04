@@ -1,6 +1,6 @@
 A, P = input().split()
 
-nums = []
+nums = [int(A)]
 P = int(P)
 
 sum = 0
@@ -20,6 +20,5 @@ cnt = 0
 for cnt in range(index):
     cnt += 1
 
-print(cnt + 1)
-## commit test
-## CLI git test
+print(nums)
+print(cnt)
