@@ -5,7 +5,6 @@ for i in range(N):
     arr.append(list(map(int, input())))
 
 len = N - 1 if N <= M else M - 1
-point = N if N < M else M
 area = 0
 
 for i in range(N - len):
