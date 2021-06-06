@@ -4,7 +4,7 @@ arr = [i for i in range(11)] # 선언과 동시에 크기 설정 (크기가 10�
 for i in arr:
     print(i)
 
-# 2차원 리스트
+# 2차원 리스트, 아래 방법은 map객체가 되서 사용도 불편해진다...
 N = 4
 
 list = [i for i in range(N)]
@@ -16,3 +16,8 @@ for i in list:
         print(j, end = ' ')
     print()
 
+# list로 받는거
+arr = []
+
+for i in range(N):
+    arr.append(list(map(int, input())))
