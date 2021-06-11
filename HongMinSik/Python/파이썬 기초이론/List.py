@@ -21,3 +21,10 @@ arr = []
 
 for i in range(N):
     arr.append(list(map(int, input())))
+
+
+# 2차원 null 리스트
+nets = [[] for i in range(N)]
+
+# 2차원 0 리스트
+nets = [[0]*N for i in range(N)]
