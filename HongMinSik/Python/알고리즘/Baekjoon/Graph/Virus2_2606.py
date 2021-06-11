@@ -16,3 +16,6 @@ def DFS(start):
         if check[i] == False and nets[start][i] == 1:
             DFS(i)
     return 
+
+
+#???
