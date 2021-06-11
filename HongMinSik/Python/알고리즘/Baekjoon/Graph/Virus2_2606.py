@@ -14,6 +14,6 @@ def DFS(start):
     print(start) # 방문한 곳 출력
     for i in range(N):
         if check[i] == False and nets[start][i] == 1: # 인접행렬에 연결이 되어있고, 방문하지 않은 노드라면...
-            DFS(i)
+            DFS(i) # 재귀호출한다 
     return 
 
