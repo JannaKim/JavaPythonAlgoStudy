@@ -1,9 +1,7 @@
-from collections import deque
 
-queue = deque()
+n = 123
+answer = 0
+for i in range(len(n)):
+    answer += int(n[i])
 
-for i in range(10):
-    queue.append(i)
-
-for i in queue:
-    print(i)
+print(answer)
