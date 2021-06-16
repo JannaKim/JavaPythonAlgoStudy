@@ -25,5 +25,3 @@ def DFS(start):
     
 DFS(1)
 print(check)
-
-# dd
