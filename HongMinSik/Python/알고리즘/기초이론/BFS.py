@@ -1,32 +1,28 @@
-# BFS구현을 위한 재료 : 방문확인 리스트, 큐
-
 from collections import deque
 
-N, M = map(int, input().split())
+def bfs(graph, start, visited):
+    queue = deque([start])
+    visited[start] = True
+    while queue:
+        v = queue.popleft()
+        print(v, end=' ')
+        for i in graph[v]:
+            if not visited[i]:
+                queue.append(i)
+                visited[i] = True
 
-a = [[0] * N for i in range(N)]
-check = [False for i in range(N)]
+graph = [
+  [],
+  [2, 3, 8],
+  [1, 7],
+  [1, 4, 5],
+  [3, 5],
+  [3, 4],
+  [7],
+  [2, 6, 8],
+  [1, 7]
+]
 
-queue = deque()
+visited = [False] * 9
 
-def BFS(start):
-    q = deque()
-    q.append(start)
-    check[start] = True
-    for i in q:
-        x = q.popleft()
-        print(x)
-        for i in range(len(a)):
-            y = a[x][i]
-            if(check[y] == False):
-                q.append(y)
-                check[y] = True
-
-for i in range(M):
-    x, y = map(int, input().split())
-    a[x][y] = a[y][x] = 1
-
-for i in a:
-    print(i)
-
-BFS(0)
+bfs(graph, 1, visited)
