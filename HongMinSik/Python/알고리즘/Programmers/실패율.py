@@ -1,15 +1,21 @@
+import operator
+
 N = int(5)
 stages = [2, 1, 2, 6, 2, 4, 3, 3]
-members = len(stages)
+percentage = [i for i in range(N + 2)]
+users = int(len(stages))
 
-result = []
-cnt = 0
 for i in range(1, N + 2):
-    for j in range(len(stages)):
-        if i == stages[j]:
-            cnt = stages.count(stages[j])
-            result.append(str(cnt) + '/' + str(members))
-            members -= int(cnt)
-            break
+    percentage[i] = stages.count(i)
 
-print(result)
+a = {}
+for i in range(1, N + 2):
+    a[i] = int(percentage[i]) / int(users)
+    users -= int(percentage[i])
+
+a = dict(sorted(a.items(), key=operator.itemgetter(1), reverse=True))
+answer = []
+
+
+a.pop
+print(a)
